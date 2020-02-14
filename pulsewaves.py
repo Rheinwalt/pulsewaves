@@ -122,9 +122,9 @@ class PulseWaves(object):
         >>> f = PulseWaves('sample.pls')
         >>> f.export()
         '''
-        import sys
         import h5py
         from time import time
+        t0 = time()
 
         if pulse_records is None:
             pulse_records = range(self.num_pulses)
@@ -144,7 +144,6 @@ class PulseWaves(object):
         #iterate through pulse records
         m = 0
         k = 0
-        t0 = time()
         for i in pulse_records:
             if show_progress:
                 dt = time() - t0
