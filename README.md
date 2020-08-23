@@ -117,4 +117,6 @@ r = f.get_pulse(0)
 w = f.get_waves(0)
 print(w.segments.keys())
 ```
+## Notes
 
+See [laspy-waveform](https://github.com/Rheinwalt/laspy-waveform) for Python code reading waveform LAS/WDP files.
